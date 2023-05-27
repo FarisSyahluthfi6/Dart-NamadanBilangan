@@ -7,12 +7,12 @@
 | Mata Kuliah   | Pemrograman Mobile  |
 | Dosen  | Muhammad Najamuddin Dwi Miharja, S.Kom, M.kom  |
 
-![output](screenshot/faris.jpg)</p>
+![Faris](screenshot/faris.jpg)</p>
 
 ## Menghitung dan menampilkan nama dan nilai perulangan bilangan </p> </br>
 
 Soal Dart: </p></br>
-![output](screenshot/soal.jpg)</p> </br>
+![Soal](screenshot/soal.jpg)</p> </br>
 
 1.  Nama dan Nilai Perulangan Bilangan Ganjil </p></br>
 
@@ -55,9 +55,6 @@ void main() {
 </p></br>
 
 <li> Penjelasan dari kode diata: </li></p><br>
-Kode Dart di atas merupakan sebuah program sederhana yang akan menghasilkan output berupa deret angka dan nama pengguna yang dimasukkan, dengan jumlah perulangan sesuai dengan input yang diberikan.
-
-Berikut adalah penjelasan lebih rinci mengenai setiap bagian dari kode tersebut:
 
 1. Import 'dart:io':
    Baris pertama pada kode tersebut mengimpor pustaka dart:io, yang digunakan untuk berinteraksi dengan input/output (I/O) di dalam program.
@@ -112,10 +109,45 @@ Berikut adalah penjelasan lebih rinci mengenai setiap bagian dari kode tersebut:
 
 18. }
     Tutup blok while-loop.
+</br></p>
 
-Dengan demikian, program ini akan
 
- menghasilkan deret angka dan nama pengguna yang dimasukkan oleh pengguna, dengan jumlah perulangan sesuai dengan input yang diberikan.
+<li> Output Programnya: </li></p><br>
 
+![Bilangan Ganjil](screenshot/Bilangan_Ganjil.png)</p> </br>
+
+2.  Nama dan Nilai Perulangan Bilangan Genap </p></br>
+
+<li> Source Code: </p></br> </li>
+
+``` dart
+
+import 'dart:io';
+
+void main() {
+  print('Masukkan Nama Anda:');
+  String nama = stdin.readLineSync()!;
+
+  print('Masukkan batas perulangan:');
+  int batas = int.parse(stdin.readLineSync()!);
+
+  print("===== Hasil =====");
+
+  for (int i = 1; i <= batas; i++) {
+    if (i % 2 == 0) {
+      print(nama);
+      print(i);
+      print("==============|");
+    }
+  }
+
+  print('Terima kasih, $nama!');
+}
+
+```
+
+</br></p>
+
+<li> Penjelasan dari kode diata: </li></p><br>
 
 
