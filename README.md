@@ -15,9 +15,10 @@ Soal Dart: </p></br>
 ![output](screenshot/soal.jpg)</p> </br>
 
 1.  Nama dan Nilai Perulangan Bilangan Ganjil </p></br>
-<ul> Source Code: </p></br>
 
-``` java
+<li> Source Code: </p></br> </li>
+
+``` dart
 
 import 'dart:io';
 
@@ -51,8 +52,70 @@ void main() {
 
 ```
 
-</p></br></ul>
+</p></br>
 
+<li> Penjelasan dari kode diata: </li></p><br>
+Kode Dart di atas merupakan sebuah program sederhana yang akan menghasilkan output berupa deret angka dan nama pengguna yang dimasukkan, dengan jumlah perulangan sesuai dengan input yang diberikan.
+
+Berikut adalah penjelasan lebih rinci mengenai setiap bagian dari kode tersebut:
+
+1. Import 'dart:io':
+   Baris pertama pada kode tersebut mengimpor pustaka dart:io, yang digunakan untuk berinteraksi dengan input/output (I/O) di dalam program.
+
+2. void main():
+   Fungsi utama yang akan dieksekusi ketika program dijalankan.
+
+3. stdout.write("Masukkan nama Anda: ");
+   Mengeluarkan prompt ke terminal untuk meminta pengguna memasukkan nama. stdout.write digunakan untuk menampilkan teks tanpa garis baru di akhirnya.
+
+4. String nama = stdin.readLineSync()!;
+   Membaca input dari pengguna yang merupakan nama, menggunakan stdin.readLineSync(). Input tersebut disimpan dalam variabel "nama" yang memiliki tipe data String. Tanda seru (!) menandakan bahwa variabel "nama" tidak boleh bernilai null.
+
+5. stdout.write("Masukkan jumlah perulangan: ");
+   Mengeluarkan prompt ke terminal untuk meminta pengguna memasukkan jumlah perulangan.
+
+6. int jumlahPerulangan = int.parse(stdin.readLineSync()!);
+   Membaca input dari pengguna yang merupakan jumlah perulangan yang diinginkan. stdin.readLineSync() digunakan untuk membaca input sebagai String, kemudian fungsi int.parse() digunakan untuk mengonversi String menjadi bilangan bulat (int). Input tersebut disimpan dalam variabel "jumlahPerulangan" yang memiliki tipe data int. Tanda seru (!) menandakan bahwa variabel "jumlahPerulangan" tidak boleh bernilai null.
+
+7. print("\nHalo, $nama!");
+   Menampilkan pesan sambutan yang mengandung nama pengguna yang dimasukkan oleh pengguna.
+
+8. print("=====  Hasil dari $jumlahPerulangan adalah:  ===== ");
+   Menampilkan header yang menggambarkan bahwa output berikutnya adalah hasil dari jumlah perulangan.
+
+9. int count = 1;
+   Variabel "count" diinisialisasi dengan nilai 1. Variabel ini akan digunakan untuk menghitung jumlah perulangan.
+
+10. int number = 1;
+    Variabel "number" diinisialisasi dengan nilai 1. Variabel ini akan digunakan untuk menyimpan angka yang akan ditampilkan.
+
+11. while (count <= jumlahPerulangan) {
+       while-loop akan terus dijalankan selama nilai "count" masih kurang dari atau sama dengan "jumlahPerulangan".
+
+12. if (number % 2 != 0) {
+       Pernyataan ini memeriksa apakah "number" adalah bilangan ganjil. Jika benar, maka blok kode di dalamnya akan dijalankan.
+
+13. print(nama);
+      Menampilkan nama pengguna.
+
+14. print(number);
+      Menampilkan nilai "number".
+
+15. print("==============|");
+      Menampilkan garis pemisah.
+
+16. count++;
+      Meningkatkan nilai "count" sebesar 1 untuk menghitung jumlah perulangan.
+
+17. number++;
+      Meningkatkan nilai "number" sebesar 1 untuk memperoleh angka selanjutnya dalam deret.
+
+18. }
+    Tutup blok while-loop.
+
+Dengan demikian, program ini akan
+
+ menghasilkan deret angka dan nama pengguna yang dimasukkan oleh pengguna, dengan jumlah perulangan sesuai dengan input yang diberikan.
 
 
 
