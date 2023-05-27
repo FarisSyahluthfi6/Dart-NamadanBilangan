@@ -1,7 +1,7 @@
 # Dart-NamadanBilangan
 
-| Nama      | Faris Syahluthfi |
-| ----------- | ----------- |
+| Nama    | Faris Syahluthfi |
+| ------- | ----------- |
 | NIM     | 312010034       |
 | Kelas   | TI.20.A.1        |
 | Mata Kuliah   | Pemrograman Mobile  |
